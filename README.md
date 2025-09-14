@@ -34,6 +34,6 @@ public array $aliases = [
 
  ### create tables to migrate into database
 
- #### 1. Command Line - php spark make:migration CreateTokens
- #### 2. Paste CreateTokens class into the database/migrations/.. file
- #### 3. Command Line - php spark migrate
+ ##### 1. Command Line - php spark make:migration CreateTokens
+ ##### 2. Paste CreateTokens class into the database/migrations/.. file
+ ##### 3. Command Line - php spark migrate
