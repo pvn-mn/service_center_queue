@@ -1,7 +1,7 @@
 # CodeIgniter 4 Application Starter
 
 
-### .env setup:
+### .env - setup:
 
 #### Base URL
 app.baseURL = 'http://localhost/my_ci4_service_center_queue/public'
@@ -17,9 +17,9 @@ database.default.DBPrefix =
 database.default.port = 3306
 
 
+ <br />
 
-
-### app/Config/Filters.php setup:
+### app/Config/Filters.php - setup:
 
 #### - pasted the route to the AuthFilter class within $aliases array -
 
@@ -30,7 +30,7 @@ public array $aliases = [
         'auth'    => \App\Filters\AuthFilter::class,  
     ];
 
-
+ <br />
 
  ### create tables to migrate into database
 
@@ -39,10 +39,10 @@ public array $aliases = [
  ##### 3. Command Line - php spark migrate
 
 
+ <br />
 
 
-
-### Login is hardcoded
+#### Login is hardcoded
 
 ##### User
 username - user
