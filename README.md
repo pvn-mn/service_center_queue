@@ -1,17 +1,13 @@
 # CodeIgniter 4 Application Starter
 
 
-# .env setup:
+### .env setup:
 
-# ENVIRONMENT
-CI_ENVIRONMENT = development
-
-
-# APP
+#### Base URL
 app.baseURL = 'http://localhost/my_ci4_service_center_queue/public'
 
 
-# DATABASE
+#### Database 
 database.default.hostname = localhost
 database.default.database = my_ci4_service_center_queue
 database.default.username = root
@@ -23,9 +19,9 @@ database.default.port = 3306
 
 
 
-# app/Config/Filters.php setup:
+### app/Config/Filters.php setup:
 
-## - pasted the route to the AuthFilter class within $aliases array -
+#### - pasted the route to the AuthFilter class within $aliases array -
 
 public array $aliases = [
 	.
@@ -33,3 +29,11 @@ public array $aliases = [
 	.
         'auth'    => \App\Filters\AuthFilter::class,  
     ];
+
+
+
+ ### create tables to migrate into database
+
+ #### 1. Command Line - php spark make:migration CreateTokens
+ #### 2. Paste CreateTokens class into the database/migrations/.. file
+ #### 3. Command Line - php spark migrate
